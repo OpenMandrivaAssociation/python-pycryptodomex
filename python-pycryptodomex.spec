@@ -79,14 +79,14 @@ touch .separate_namespace
 %py3_build
 
 # Build documentation
-%make_build -C Doc/ man SPHINXBUILD=sphinx-build
+#make_build -C Doc/ man SPHINXBUILD=sphinx-build
 
 
 %install
 %py3_install
 
 # Install man pages
-install -Dpm 0644 Doc/_build/man/pycryptodome.1 $RPM_BUILD_ROOT%{_mandir}/man1/pycryptodome.1
+#install -Dpm 0644 Doc/_build/man/pycryptodome.1 $RPM_BUILD_ROOT%{_mandir}/man1/pycryptodome.1
 
 # Fix permissions
 chmod 0755 $RPM_BUILD_ROOT%{python3_sitearch}/Cryptodome/SelfTest/PublicKey/test_vectors/ECC/gen_ecc_p256.sh
@@ -98,8 +98,7 @@ chmod 0755 $RPM_BUILD_ROOT%{python3_sitearch}/Cryptodome/SelfTest/PublicKey/test
 %{python3_sitearch}/Cryptodome/
 %exclude %{python3_sitearch}/Cryptodome/SelfTest/
 %{python3_sitearch}/%{srcname}-*.egg-info/
-%{_mandir}/man1/pycryptodome.1.*
-
+#{_mandir}/man1/pycryptodome.1.*
 
 %files selftest
 %{python3_sitearch}/Cryptodome/SelfTest/
