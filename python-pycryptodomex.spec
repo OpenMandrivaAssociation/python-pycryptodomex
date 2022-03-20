@@ -79,7 +79,7 @@ touch .separate_namespace
 %py3_build
 
 # Build documentation
-%make_build -C Doc/ man SPHINXBUILD=sphinx-build
+#make_build -C Doc/ man SPHINXBUILD=sphinx-build
 
 
 %install
