@@ -29,7 +29,7 @@ with the PyCrypto library.}
 
 Name:           python-%{srcname}
 Version:        3.9.8
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        A self-contained cryptographic library for Python
 
 # PyCrypto-based code is public domain, further PyCryptodome contributions are
