@@ -38,9 +38,9 @@ License:        BSD and Public Domain
 URL:            http://www.pycryptodome.org/
 Source0:        https://github.com/Legrandin/pycryptodome/archive/v%{version}/%{srcname}-%{version}.tar.gz
 # Use external libtomcrypt library
-Patch0:         %{name}-3.7.3-use_external_libtomcrypt.patch
+#Patch0:         %{name}-3.7.3-use_external_libtomcrypt.patch
 # Fix documentation build with Sphinx <= 1.2, especially on EL
-Patch1:         %{name}-3.7.0-sphinx.patch
+#Patch1:         %{name}-3.7.0-sphinx.patch
 
 BuildRequires:  pkgconfig(libtomcrypt)
 BuildRequires:  python-devel
