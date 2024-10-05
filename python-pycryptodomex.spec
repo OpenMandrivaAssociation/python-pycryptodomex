@@ -69,9 +69,9 @@ This package provides the PyCryptodome test suite module (Cryptodome.SelfTest).
 rm -r src/libtom/
 
 # Remove shebang
-sed '1{\@^#! /usr/bin/env python@d}' lib/Crypto/SelfTest/__main__.py >lib/Crypto/SelfTest/__main__.py.new && \
-touch -r lib/Crypto/SelfTest/__main__.py lib/Crypto/SelfTest/__main__.py.new && \
-mv lib/Crypto/SelfTest/__main__.py.new lib/Crypto/SelfTest/__main__.py
+#sed '1{\@^#! /usr/bin/env python@d}' lib/Crypto/SelfTest/__main__.py >lib/Crypto/SelfTest/__main__.py.new && \
+#touch -r lib/Crypto/SelfTest/__main__.py lib/Crypto/SelfTest/__main__.py.new && \
+#mv lib/Crypto/SelfTest/__main__.py.new lib/Crypto/SelfTest/__main__.py
 
 
 %build
