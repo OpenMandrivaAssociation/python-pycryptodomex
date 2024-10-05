@@ -47,6 +47,8 @@ BuildRequires:  python-devel
 BuildRequires:  python-setuptools
 # Needed for documentation
 BuildRequires:  python-sphinx
+BuildRequires:  python-pip
+BuildRequires:  python-wheel
 
 %description
 %{_description}
