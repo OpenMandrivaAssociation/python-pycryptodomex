@@ -28,8 +28,8 @@ Note: all modules are installed under the Cryptodome package to avoid conflicts
 with the PyCrypto library.}
 
 Name:           python-%{srcname}
-Version:        3.9.8
-Release:        3%{?dist}
+Version:        3.21.0
+Release:        1
 Summary:        A self-contained cryptographic library for Python
 
 # PyCrypto-based code is public domain, further PyCryptodome contributions are
