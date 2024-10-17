@@ -35,7 +35,7 @@ Summary:        A self-contained cryptographic library for Python
 # PyCrypto-based code is public domain, further PyCryptodome contributions are
 # BSD
 License:        BSD and Public Domain
-URL:            http://www.pycryptodome.org/
+URL:            https://www.pycryptodome.org/
 Source0:        https://github.com/Legrandin/pycryptodome/archive/v%{version}/%{srcname}-%{version}.tar.gz
 # Use external libtomcrypt library
 Patch0:         %{name}-3.7.3-use_external_libtomcrypt.patch
