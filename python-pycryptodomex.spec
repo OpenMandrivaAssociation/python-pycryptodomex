@@ -28,8 +28,8 @@ Note: all modules are installed under the Cryptodome package to avoid conflicts
 with the PyCrypto library.}
 
 Name:           python-%{srcname}
-Version:        3.9.8
-Release:        3%{?dist}1
+Version:        3.23.0
+Release:        1
 Summary:        A self-contained cryptographic library for Python
 
 # PyCrypto-based code is public domain, further PyCryptodome contributions are
@@ -40,7 +40,7 @@ Source0:        https://github.com/Legrandin/pycryptodome/archive/v%{version}/%{
 # Use external libtomcrypt library
 Patch0:         %{name}-3.7.3-use_external_libtomcrypt.patch
 # Fix documentation build with Sphinx <= 1.2, especially on EL
-Patch1:         %{name}-3.7.0-sphinx.patch
+#Patch1:         %{name}-3.7.0-sphinx.patch
 
 BuildRequires:  pkgconfig(libtomcrypt)
 BuildRequires:  python-devel
