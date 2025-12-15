@@ -90,7 +90,7 @@ This package provides the PyCryptodome test suite module (Cryptodome.SelfTest).
 #install -Dpm 0644 Doc/_build/man/pycryptodome.1 $RPM_BUILD_ROOT%{_mandir}/man1/pycryptodome.1
 
 # Fix permissions
-chmod 0755 $RPM_BUILD_ROOT%{python3_sitearch}/Cryptodome/SelfTest/PublicKey/test_vectors/ECC/gen_ecc_p256.sh
+#chmod 0755 $RPM_BUILD_ROOT%{python3_sitearch}/Cryptodome/SelfTest/PublicKey/test_vectors/ECC/gen_ecc_p256.sh
 
 
 %files
