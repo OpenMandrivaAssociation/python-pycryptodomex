@@ -67,7 +67,7 @@ This package provides the PyCryptodome test suite module (Cryptodome.SelfTest).
 %autosetup -n pycryptodomex-%{version} -p0
 
 # Drop bundled libraries
-rm -r src/libtom/
+#rm -r src/libtom/
 
 # Remove shebang
 #sed '1{\@^#! /usr/bin/env python@d}' lib/Crypto/SelfTest/__main__.py >lib/Crypto/SelfTest/__main__.py.new && \
