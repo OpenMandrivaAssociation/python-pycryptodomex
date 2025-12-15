@@ -45,6 +45,7 @@ Source0:        https://github.com/Legrandin/pycryptodome/archive/v%{version}/%{
 BuildRequires:  pkgconfig(libtomcrypt)
 BuildRequires:  python-devel
 BuildRequires:  python-setuptools
+BuildRequires:  python-pip
 # Needed for documentation
 BuildRequires:  python-sphinx
 
