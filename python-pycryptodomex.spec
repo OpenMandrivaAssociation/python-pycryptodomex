@@ -98,7 +98,7 @@ This package provides the PyCryptodome test suite module (Cryptodome.SelfTest).
 %license LICENSE.rst
 %{python3_sitearch}/Cryptodome/
 %exclude %{python3_sitearch}/Cryptodome/SelfTest/
-%{python3_sitearch}/%{srcname}-*.egg-info/
+#{python3_sitearch}/%{srcname}-*.egg-info/
 #{_mandir}/man1/pycryptodome.1.*
 
 %files selftest
