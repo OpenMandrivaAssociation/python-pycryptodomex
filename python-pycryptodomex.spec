@@ -63,7 +63,7 @@ This package provides the PyCryptodome test suite module (Cryptodome.SelfTest).
 
 
 %prep
-%autosetup -n pycryptodome-%{version} -p0
+%autosetup -n pycryptodomex-%{version} -p0
 
 # Drop bundled libraries
 rm -r src/libtom/
