@@ -29,8 +29,9 @@ with the PyCrypto library.}
 
 Name:           python-%{srcname}
 Version:        3.23.0
-Release:        1
+Release:        2
 Summary:        A self-contained cryptographic library for Python
+Group:          Development/Python
 
 # PyCrypto-based code is public domain, further PyCryptodome contributions are
 # BSD
@@ -43,11 +44,12 @@ Source0:        https://github.com/Legrandin/pycryptodome/archive/v%{version}/%{
 #Patch1:         %{name}-3.7.0-sphinx.patch
 
 BuildRequires:  pkgconfig(libtomcrypt)
-BuildRequires:  python-devel
-BuildRequires:  python-setuptools
-BuildRequires:  python-pip
+BuildRequires:  pkgconfig(python3)
+BuildRequires:  python%{pyver}dist(setuptools)
+BuildRequires:  python%{pyver}dist(pip)
+BuildRequires:  python%{pyver}dist(wheel)
 # Needed for documentation
-BuildRequires:  python-sphinx
+BuildRequires:  python%{pyver}dist(sphinx)
 
 %description
 %{_description}
@@ -55,7 +57,8 @@ BuildRequires:  python-sphinx
 
 %package selftest
 Summary:        PyCryptodome test suite module
-Requires:       python-%{srcname}
+Group:          Development/Python
+Requires:       python-%{srcname} = %{EVRD}
 
 %description selftest
 %{_description}
